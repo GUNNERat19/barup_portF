@@ -118,14 +118,14 @@ const ExternalLinkIcon = ({ className }: { className?: string }) => (
 // --- CONFIGURATION ---
 // Personalize your portfolio here.
 const portfolioConfig = {
-    name: "Swarup",
-    title: "Software Engineer",
+    name: "Alex Doe",
+    title: "Full-Stack Developer",
     description: "I build elegant, responsive, and high-performance web applications from concept to completion.",
-    email: "raj19092003@gmail.com",
+    email: "hello@alexdoe.com",
     socials: {
-        github: "https://github.com/GUNNERat19",
-        linkedin: "https://www.linkedin.com/in/swarup-kumar-bhuyan-84758a225/",
-        twitter: "https://x.com/SwarupKumarBhu5",
+        github: "https://github.com/your-username",
+        linkedin: "https://linkedin.com/in/your-username",
+        twitter: "https://twitter.com/your-username",
     },
     projects: [
         {
@@ -133,7 +133,7 @@ const portfolioConfig = {
             description: "An advanced e-commerce platform with real-time inventory management and a custom checkout experience.",
             tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Firebase"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Alpha",
-            //liveUrl: "#",
+            liveUrl: "#",
             githubUrl: "#",
         },
         {
@@ -141,7 +141,7 @@ const portfolioConfig = {
             description: "A collaborative project management tool designed to streamline team workflows and boost productivity.",
             tech: ["React", "Node.js", "GraphQL", "MongoDB", "Socket.io"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Beta",
-            //liveUrl: "#",
+            liveUrl: "#",
             githubUrl: "#",
         },
         {
@@ -149,7 +149,7 @@ const portfolioConfig = {
             description: "A beautiful data visualization dashboard for analyzing complex datasets with interactive charts and graphs.",
             tech: ["Vue.js", "D3.js", "Python", "Flask", "PostgreSQL"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Gamma",
-            //liveUrl: "#",
+            liveUrl: "#",
             githubUrl: "#",
         },
         {
@@ -157,7 +157,7 @@ const portfolioConfig = {
             description: "A mobile-first social media application focused on content discovery and community engagement.",
             tech: ["React Native", "Firebase", "Redux", "Expo"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Delta",
-            //liveUrl: "#",
+            liveUrl: "#",
             githubUrl: "#",
         },
     ],
@@ -227,7 +227,7 @@ const Hero: React.FC = () => {
             <div className="container mx-auto px-6 text-center">
                 <div className="max-w-4xl mx-auto">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight">
-                        Hi, I'm <span className="text-cyan-400">{portfolioConfig.name}</span>
+                        Hi, I&apos;m <span className="text-cyan-400">{portfolioConfig.name}</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
                        {portfolioConfig.description}
@@ -257,7 +257,7 @@ const About: React.FC = () => {
                             My experience spans across the entire development lifecycle, from conceptualization and design to deployment and maintenance. I thrive in collaborative environments and am always eager to learn new technologies and improve my craft.
                         </p>
                          <p>
-                            Here are a few technologies I've been working with recently:
+                            Here are a few technologies I&apos;ve been working with recently:
                         </p>
                     </div>
                     <div className="md:w-1/2">
@@ -297,10 +297,10 @@ const Projects: React.FC = () => {
                                     ))}
                                 </div>
                                 <div className="flex items-center space-x-4 mt-6">
-                                    {/* <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors flex items-center gap-2">
+                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors flex items-center gap-2">
                                         <ExternalLinkIcon className="w-5 h-5" />
                                         Live Demo
-                                    </a> */}
+                                    </a>
                                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors flex items-center gap-2">
                                         <GithubIcon className="w-5 h-5" />
                                         Source Code
@@ -321,7 +321,7 @@ const Contact: React.FC = () => {
             <div className="container mx-auto px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
                 <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-                    I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello, feel free to reach out.
+                    I&apos;m currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello, feel free to reach out.
                 </p>
                 <a href={`mailto:${portfolioConfig.email}`} className="text-xl md:text-2xl font-semibold text-cyan-400 hover:text-cyan-500 transition-colors border-b-2 border-cyan-400/0 hover:border-cyan-500/100 pb-1">
                     {portfolioConfig.email}
