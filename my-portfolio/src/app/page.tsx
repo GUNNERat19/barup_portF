@@ -118,14 +118,14 @@ const ExternalLinkIcon = ({ className }: { className?: string }) => (
 // --- CONFIGURATION ---
 // Personalize your portfolio here.
 const portfolioConfig = {
-    name: "Alex Doe",
-    title: "Full-Stack Developer",
+    name: "Swarup",
+    title: "Software Engineer",
     description: "I build elegant, responsive, and high-performance web applications from concept to completion.",
-    email: "hello@alexdoe.com",
+    email: "raj19092003@gmail.com",
     socials: {
-        github: "https://github.com/your-username",
-        linkedin: "https://linkedin.com/in/your-username",
-        twitter: "https://twitter.com/your-username",
+        github: "https://github.com/GUNNERat19",
+        linkedin: "https://www.linkedin.com/in/swarup-kumar-bhuyan-84758a225/",
+        //twitter: "https://twitter.com/your-username",
     },
     projects: [
         {
@@ -133,7 +133,7 @@ const portfolioConfig = {
             description: "An advanced e-commerce platform with real-time inventory management and a custom checkout experience.",
             tech: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Firebase"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Alpha",
-            liveUrl: "#",
+            // liveUrl: "#",
             githubUrl: "#",
         },
         {
@@ -141,7 +141,7 @@ const portfolioConfig = {
             description: "A collaborative project management tool designed to streamline team workflows and boost productivity.",
             tech: ["React", "Node.js", "GraphQL", "MongoDB", "Socket.io"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Beta",
-            liveUrl: "#",
+            // liveUrl: "#",
             githubUrl: "#",
         },
         {
@@ -149,7 +149,7 @@ const portfolioConfig = {
             description: "A beautiful data visualization dashboard for analyzing complex datasets with interactive charts and graphs.",
             tech: ["Vue.js", "D3.js", "Python", "Flask", "PostgreSQL"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Gamma",
-            liveUrl: "#",
+            // liveUrl: "#",
             githubUrl: "#",
         },
         {
@@ -157,7 +157,7 @@ const portfolioConfig = {
             description: "A mobile-first social media application focused on content discovery and community engagement.",
             tech: ["React Native", "Firebase", "Redux", "Expo"],
             imageUrl: "https://placehold.co/600x400/111827/ffffff?text=Project+Delta",
-            liveUrl: "#",
+            // liveUrl: "#",
             githubUrl: "#",
         },
     ],
@@ -297,10 +297,10 @@ const Projects: React.FC = () => {
                                     ))}
                                 </div>
                                 <div className="flex items-center space-x-4 mt-6">
-                                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors flex items-center gap-2">
+                                    {/* <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors flex items-center gap-2">
                                         <ExternalLinkIcon className="w-5 h-5" />
                                         Live Demo
-                                    </a>
+                                    </a> */}
                                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-cyan-400 transition-colors flex items-center gap-2">
                                         <GithubIcon className="w-5 h-5" />
                                         Source Code
@@ -338,7 +338,7 @@ const Footer: React.FC = () => {
                 <div className="flex justify-center space-x-6 mb-4">
                     <a href={portfolioConfig.socials.github} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><GithubIcon className="w-6 h-6" /></a>
                     <a href={portfolioConfig.socials.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><LinkedinIcon className="w-6 h-6" /></a>
-                    <a href={portfolioConfig.socials.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><TwitterIcon className="w-6 h-6" /></a>
+                    {/* <a href={portfolioConfig.socials.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><TwitterIcon className="w-6 h-6" /></a> */}
                 </div>
                 <p>&copy; {new Date().getFullYear()} {portfolioConfig.name}. All Rights Reserved.</p>
             </div>
